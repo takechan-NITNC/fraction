@@ -1,0 +1,3 @@
+[submodule "gcd"]
+	path = gcd
+	url = git@github.com:takechan-NITNC/gcd.git
