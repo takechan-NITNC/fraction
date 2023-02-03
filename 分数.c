@@ -54,5 +54,9 @@ struct fraction fraction_divide(struct fraction divided, struct fraction dividin
 		fprintf(stderr, "%sの%d行目：引数の分母が０です。\n", __FILE__, __LINE__);
 		exit(1);
 	}
+	if (dividing.numerator == 0) {
+		fprintf(stderr, "%sの%d行目：除数の分子が０です。\n", __FILE__, __LINE__);
+		exit(1);
+	}
 	return fraction_product(divided, (struct fraction){dividing.numerator, dividing.denominator});
 }
