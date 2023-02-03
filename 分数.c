@@ -15,6 +15,10 @@ struct fraction fraction_reduce(struct fraction reduced)
 	}
 	return ret;
 }
+struct fraction int_to_fraction(int parsed)
+{
+	return (struct fraction){1, parsed};
+}
 struct fraction fraction_sum(struct fraction fraction1, struct fraction fraction2)
 {
 	if (fraction1.denominator == 0 || fraction2.denominator == 0) {
