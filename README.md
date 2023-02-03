@@ -9,6 +9,8 @@ struct fractionは分数を表します。
 ### int numerator
 分子を表します。
 ## 関数
+### struct fraction int_to_fraction(int)
+指定した整数を分子に持ち分母が１の分数を返します。
 ### struct fraction fraction_sum(struct fraction, struct fraction)
 与えられた２つの分数の和を返します。
 
