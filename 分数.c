@@ -39,7 +39,7 @@ struct fraction fraction_substract(struct fraction substracted, struct fraction 
 	return fraction_sum(
 		substracted,
 		fraction_product(
-			(struct fraction){1, -1},
+			int_to_fraction(-1),
 			substracting
 		)
 	);
